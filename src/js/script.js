@@ -15,7 +15,7 @@ routie({
 })
 
 function home () {
-  render.home()
+  if (!document.querySelector('.main--home')) render.home()
 
   const search = {
     field: document.getElementById('book-title'),

@@ -21,7 +21,7 @@ function searchForm () {
 function pageHeader (title) {
   const header = element.create('header')
   const h1 = element.heading('h1', title)
-  const logo = element.image('./src/images/oba-logo.svg', 'logo')
+  const logo = element.image('./src/images/oba-logo.svg', 'OBA-logo', 'logo')
 
   element.appendChildren(header, [
     h1,
@@ -89,7 +89,7 @@ function detail (data) {
   const container = element.create('section', 'section__book-info')
   const containerDiv = element.create('div', 'book-info__container')
 
-  const img = element.image(data.search.coverimages.coverimage[1]._text, 'cover')
+  const img = element.image(data.search.coverimages.coverimage[1]._text, 'Kaft van boek', 'cover')
 
   const div1 = createRow('Titel', data.search.titles['short-title']._text)
   const div2 = createRow('Auteur', data.search.authors ? data.search.authors['main-author']._text.split(',')[1] + ' ' + data.search.authors['main-author']._text.split(',')[0] : 'Niet gevonden')

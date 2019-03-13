@@ -79,12 +79,13 @@ function link (href, content, cssClass) {
   return a
 }
 
-function image (src, cssClass) {
+function image (src, alt, cssClass) {
   if (!src) throw new Error('No image source specified')
 
   const img = document.createElement('img')
 
   img.src = src
+  img.alt = alt
 
   if (cssClass) img.classList.add(cssClass)
 

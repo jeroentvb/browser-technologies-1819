@@ -15,9 +15,18 @@
 
   <title>Zoek een boek</title>
 </head>
+
 <body>
-  <noscript>
-    This page won't work without JavaScript enabled
-  </noscript>
+  <header>
+    <h1>Zoek een boek</h1>
+    <img src="./src/images/oba-logo.svg" class="logo">
+  </header>
+  <main class="main main--home">
+    <form class="form form--search" _lpchecked="1">
+      <label class="form__label">Zoek een titel</label>
+      <input type="text" id="book-title" class="form__input" placeholder="Titel van een boek">
+      <input type="submit" id="search-book" class="form__submit button">
+    </form>
+  </main>
 </body>
 </html>
