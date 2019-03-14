@@ -44,3 +44,4 @@ Ik heb de home pagina weer als HTML in [index.html](index.html) gezet zodat de h
 De app maakt geen gebruik van cookies en werkt dus ook zonder.
 
 ### Geen localStorage
+De app werkt niet zonder localStorage omdat er data uit opgehaald wordt zonder te controleren of localStorage überhaupt beschikbaar is, waardoor JavaScript errors toont.
