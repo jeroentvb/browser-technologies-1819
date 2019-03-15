@@ -29,6 +29,7 @@ Ik gebruik als font `Avenir`. Deze staat standaard op een Mac. Wanneer je de web
 Hierdoor gaat er niks stuk als je custom fonts uitschakelt.
 
 ### Geen kleur/kleurenblind
+Ik heb alle soorten kleurenblindheid en het niet kunnen zien van kleur. De app was nog best wel goed leesbaar. Ik denk dat ik op dat vlak niet zo veel meer hoef aan te passen.
 
 ### Geen muis/trackpad
 Dit is geen probleem. Er kan zonder problemen door de website worden genavigeerd. Alleen het kaartje op de detailpagina
