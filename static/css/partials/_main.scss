@@ -1,10 +1,12 @@
 main {
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 
   &.home {
     text-align: center;
 
     h1 {
+      margin-top: 80px;
       margin-top: 5rem;
     }
   }
@@ -24,6 +26,7 @@ main {
 
 section {
   &.start {
+    margin-top: 32px;
     margin-top: 2rem;
 
     h2 {
@@ -43,23 +46,28 @@ section {
 }
 
 .logo {
+  max-width: 160px;
   max-width: 10rem;
 }
 
 .percentageBar {
   width: 100%;
   border: 1px solid #000;
+  border-radius: 3.2px;
   border-radius: .2rem;
+  height: 32px;
   height: 2rem;
   background-color: #f4f4f4;
 }
 
 .amount {
   background-color: $color-secondary;
+  height: 32px;
   height: 2rem;
   transition: width .4s;
 }
 
 .text {
+  margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }

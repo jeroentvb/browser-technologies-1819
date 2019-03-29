@@ -8,6 +8,7 @@ form {
   }
 
   .option {
+    margin-bottom: 8px;
     margin-bottom: .5rem;
 
     &__label {
@@ -21,6 +22,7 @@ form {
   }
 
   label {
+    margin-bottom: 12.8px;
     margin-bottom: .8rem;
     display: block;
   }
@@ -28,9 +30,12 @@ form {
 
 .radiobtn {
   display: inline-block;
+  width: 32px;
   width: 2rem;
+  height: 32px;
   height: 2rem;
   background-color: grey;
+  margin-rigth: 16px;
   margin-right: 1rem;
   border-radius: 50%;
   &:after {
@@ -45,9 +50,12 @@ label input[type=radio]:checked {
 
     &::after {
       display: block;
+      width: 12.8px;
       width: .8rem;
+      height: 12.8px;
       height: .8rem;
       border-radius: 50%;
+      margin: 9.6 0 0 9.6;
       margin: .6rem 0 0 .6rem;
       background-color: #fff;
     }
@@ -57,9 +65,13 @@ label input[type=radio]:checked {
 input {
   &[type=text] {
     border: 1px solid black;
+    padding: 8px 16px;
     padding: .5rem 1rem;
+    font-size: 16px;
     font-size: 1rem;
+    border-radius: 3.2px;
     border-radius: .2rem;
+    margin-bottom: 24px;
     margin-bottom: 1.5rem;
     appearance: none;
     -webkit-appearance: none;
@@ -71,6 +83,7 @@ input {
   }
 
   &[type=submit] {
+    margin: 16px 0;
     margin: 1rem 0;
     border: none;
     font-family: 'Fira Code', system-ui, sans-serif;
@@ -82,7 +95,6 @@ input {
   }
 
   &[type=radio] {
-    // margin-right: 1rem;
     display: none;
   }
 }
