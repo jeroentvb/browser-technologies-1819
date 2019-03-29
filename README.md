@@ -1,48 +1,34 @@
-# Browser technologies
-<!--
-- Schrijf een Readme met:
-  - een beschrijving van alle features die je hebt getest
-  - een beschrijving van de Device lab test en screenreader test.
-  - beschrijf hoe je de problemen hebt opgelost, of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
-  -->
+# A-Pollo
+![A-Pollo logo](static/images/logo.svg)
+
+A-Pollo is een progressive enchanced poll applicatie.
 
 ## Inhoud
-* [Testen](#testen)
-  * [Geen afbeeldingen](#geen-afbeeldingen)
-  * [Geen custom fonts](#geen-custom-fonts)
-  * [Geen kleur/kleurenblind](#geen-kleur/kleurenblind)
-  * [Geen muis/trackpad](#geen-muis/trackpad)
-  * [Langzaam internet](#langzaam-internet)
-  * [Geen JS](#geen-js)
-  * [Geen cookies](#geen-cookies)
-  * [Geen localStorage](#geen-localstorage)
+* [Features](#features)
+* [Lagen](#lagen)
+* [To do](#to-do)  
 
-## Testen
-Hier de resultaten van het testen van mijn OBA app.
+## Features
+1. Poll aanmaken
 
-### Geen afbeeldingen
-Alle afbeeldingen gingen stuk (duh). Ik had nog geen alt-attributten toegevoegd. Dat heb ik inmiddels wel gedaan. Om dit verder te verbeteren zou ik het logo (een svg) in de html kunnen zetten.  
-Helaas ging ook de kaart op de detailpagina stuk. Dit komt doordat [leaflet](https://leafletjs.com/) afbeeldingen gebruikt om de kaart op te bouwen. Hierdoor werkt de kaart niet zonder afbeeldingen.
+PE doormiddel van het toevoegen van 1 optie per keer wanneer JavaScript beschikbaar is.
 
-### Geen custom fonts
-Ik gebruik als font `Avenir`. Deze staat standaard op een Mac. Wanneer je de website op een windows pc zou bekijken valt de CSS terug op `system-ui`, en als dat nog niet ondersteund wordt door de browser wordt `sans-serif` gebruikt.  
-Hierdoor gaat er niks stuk als je custom fonts uitschakelt.
+2. Poll invullen
 
-### Geen kleur/kleurenblind
-Ik heb alle soorten kleurenblindheid en het niet kunnen zien van kleur. De app was nog best wel goed leesbaar. Ik denk dat ik op dat vlak niet zo veel meer hoef aan te passen.
+3. Poll statistieken bekijken
 
-### Geen muis/trackpad
-Dit is geen probleem. Er kan zonder problemen door de website worden genavigeerd. Alleen het kaartje op de detailpagina
+PE door het live updaten van de statistieken doormiddel van een webSocket. Hier wordt eerst gekeken of een webSocket in de browser bestaat.  
+Daarnaast is er een deel knop die een link kan kopiëren als JavaScript beschikbaar is.
 
-### Langzaam internet
-Bij een verbinding van 200kb up en down doet de home pagina er 8.82 seconden over om de DOM content te laden. Het duurt 9.11 seconden voordat de pagina helemaal klaar is. Dit komt vooral doordat [leaflet](https://leafletjs.com/) op de home-pagina wordt geladen. Het JS bestand duurt 6.84 seconden en het CSS bestand 1.8 seconden. Het niet of later laden vermindert de laadtijd dus aanzienelijk. Het later laden van leaflet is dus een goed idee voor mensen met langzaam internet.
+## Lagen
+#### Functional
+Omdat de applicatie gebouwd is om te werken met alleen HTML zou het altijd functioneel moeten zijn tenzij de browser geen HTML5 ondersteunt.
 
-### Geen JS
-De hele app werkte niet.  
-Ik heb de home pagina weer als HTML in [index.html](index.html) gezet zodat de home-pagina in ieder geval wordt getoond als de gebruiker javascript uit heeft staan. Verder werkt de app helaas niet.
+#### Usable
+Wanneer er CSS wordt gesupport is de applicatie prima bruikbaar doordat er een nette layout ontstaat.
 
-### Geen cookies
-De app maakt geen gebruik van cookies en werkt dus ook zonder.
+#### Pleasurable
+Als JavaScript wordt ondersteund is de applicatie enhanced met features zoals omschreven in het kopje [features](#features).
 
-### Geen localStorage
-De app werkt niet zonder localStorage omdat er data uit opgehaald wordt zonder te controleren of localStorage überhaupt beschikbaar is, waardoor JavaScript errors toont.
+## To do
+- [ ] Voeg meerdere opties toe voor het maken van een poll (checkboxes ipv radio's).

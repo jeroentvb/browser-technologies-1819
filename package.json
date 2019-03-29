@@ -1,23 +1,33 @@
 {
-  "name": "project-1-1819",
+  "name": "a-pollo",
   "version": "1.0.0",
-  "description": "Een SPA",
+  "description": "A poll web-application",
   "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "ws": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "setupdb": "node modules/setupdb.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeroentvb/project-1-1819.git"
+    "url": "git+https://github.com/jeroentvb/a-pollo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "jeroentvb",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jeroentvb/project-1-1819/issues"
+    "url": "https://github.com/jeroentvb/a-pollo/issues"
   },
-  "homepage": "https://github.com/jeroentvb/project-1-1819#readme",
-  "dependencies": {
-    "oba-wrapper": "github:maanlamp/OBA-wrapper"
-  }
+  "homepage": "https://github.com/jeroentvb/a-pollo#readme"
 }
