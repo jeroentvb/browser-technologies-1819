@@ -4,9 +4,13 @@
 A-Pollo is een progressive enchanced poll applicatie.
 
 ## Inhoud
+* [Wireflow](#wireflow)
 * [Features](#features)
 * [Lagen](#lagen)
-* [To do](#to-do)  
+* [To do](#to-do)
+
+## Wireflow
+![wireflow](bin/wireflow.jpg)
 
 ## Features
 1. Poll aanmaken
